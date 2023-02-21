@@ -1,1 +1,74 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('Lunes')
+        {
+            steps
+            {
+            script
+            {
+                def dia = new Date().getDay()
+                def dias_letras= 
+                [1: "Lunes"
+                ]
+                
+                 if(dia == 1)
+                 println "No se ejecuta los lunes"
+            }
+            }
+        }
+        stage('Martes')
+        {
+            steps
+            {
+            script
+            {
+                def dia_completo = new Date()
+                def dia = new Date().getDay()
+                def dias_letras= 
+                [2: "Martes"
+                ]
+                
+                 if(dia == 2)
+                 println dia_completo
+            }
+            }
+        }
+        stage('Miércoles')
+        {
+            steps
+            {
+            script
+            {
+                def dia = new Date().getDay()
+                def dias_letras= 
+                [3: "Miércoles"
+                ]
+                
+                 if(dia == 3)
+                 println "No se ejecuta los miércoles"
+            }
+            }
+        }
+        stage('Jueves')
+        {
+            steps
+            {
+            script
+            {
+                def dia = new Date().getDay()
+                def dias_letras= 
+                [4: "Jueves"
+                ]
+                
+                 if(dia == 4)
+                 println "No se ejecuta los Jueves"
+            }
+            }
+        }
+        
+    }
+}
 
