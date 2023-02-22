@@ -15,7 +15,7 @@ pipeline
                     println numero2
                     println numero1 * numero2
                     println numero1 + numero2 + numero1 * numero2
-                    def info = "calculo" + " " + numero1 * numero2 + " " + numero1
+                    def info = "calculo" + " " + numero1 * numero2 + " " + numero1 * numero2 + numero2
                     writeFile(file: "salida.txt", text:info)
                 }
             }
